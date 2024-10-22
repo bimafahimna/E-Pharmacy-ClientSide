@@ -1,0 +1,39 @@
+.nav_wrapper {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+}
+.nav {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 90vw;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.nav_subtitle {
+  color: var(--white-color);
+  font-size: large;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.logo {
+  color: var(--white-color);
+  font-family: "Poppins";
+  font-size: 2rem;
+}
+
+.homeBtn {
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.end_nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

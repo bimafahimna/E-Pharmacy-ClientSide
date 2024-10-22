@@ -1,0 +1,21 @@
+.error_input {
+  color: var(--danger-color);
+  outline-color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+}
+.error_input:focus {
+  color: var(--danger-color);
+  outline-color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+}
+
+.error {
+  background-color: var(--danger-color);
+}
+
+.input {
+  padding: 0.5rem;
+  height: auto;
+  font-size: 0.9rem;
+  font-family: inherit;
+}

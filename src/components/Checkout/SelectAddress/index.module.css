@@ -1,0 +1,63 @@
+.form_container {
+  background-color: white;
+  width: 600px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  gap: 1rem;
+}
+
+.form_address {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.address_info_container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.radio_button {
+  cursor: pointer;
+}
+
+.address_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.receiver_info {
+  font-size: large;
+  font-weight: 600;
+}
+
+.address_regions {
+  font-weight: normal;
+  color: var(--font-gray-color);
+}
+
+.add_address {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: white;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.selectFormHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

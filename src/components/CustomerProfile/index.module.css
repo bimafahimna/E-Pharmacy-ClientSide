@@ -1,0 +1,102 @@
+.customer_profile_wrapper {
+  position: relative;
+}
+.customer_profile {
+  height: 3rem;
+  aspect-ratio: 1/1;
+}
+
+.customer_profile_image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.dropdown_menu {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: max-content;
+  text-align: center;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: transform 0.2s;
+  transform: scale(0);
+}
+
+.customer_profile:hover ~ .dropdown_menu {
+  display: flex;
+  transform: scale(1);
+}
+
+.dropdown_menu:hover {
+  display: flex;
+  transform: scale(1);
+}
+
+.dropdown_menu_items {
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  z-index: 100;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.dropdown_menu_items > *,
+.dropdown_menu_items > *:visited,
+.dropdown_menu_items > *:hover,
+.dropdown_menu_items > *:active {
+  color: var(--black-color);
+  width: 100%;
+}
+
+.logout_button {
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.signin_button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--white-color);
+  height: 100%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border: solid 15px;
+  border-color: transparent transparent var(--white-color) transparent;
+  z-index: 103;
+  margin-top: -0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: -1px;
+  filter: drop-shadow(1px -2px 1px rgba(0, 0, 0, 0.1))
+    drop-shadow(-1px -2px 1px rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(1px -2px 1px rgba(0, 0, 0, 0.1))
+    drop-shadow(-1px -2px 1px rgba(0, 0, 0, 0.1));
+}
+
+.item_button {
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}

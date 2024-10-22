@@ -1,0 +1,33 @@
+.background {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  z-index: 2000;
+  background-color: transparent;
+}
+
+.close_button {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  display: flex;
+  width: calc(100vw - 2rem);
+  max-width: 650px;
+  background-color: white;
+  flex-direction: column;
+  z-index: 3000;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-radius: 0.5rem;
+}

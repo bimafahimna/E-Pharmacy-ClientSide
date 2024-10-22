@@ -1,0 +1,87 @@
+.addresses {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  height: fit-content;
+}
+
+.address_name {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  height: max-content;
+  margin-bottom: 0.5rem;
+}
+
+.address_name h3 {
+  font-weight: 600;
+}
+
+.addresses_title {
+  background-color: var(--white-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addresses_title h2 {
+  font-weight: 500;
+}
+
+.address_card {
+  background-color: var(--white-color);
+  padding: 1rem;
+}
+
+.address_details {
+  color: var(--font-gray-color);
+}
+
+.receiver > * {
+  font-weight: 600;
+}
+
+.add_address {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: white;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.edit {
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: transparent;
+  color: var(--danger-color);
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inline > * {
+  display: inline;
+}
+
+.is_active {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  border: 1px solid var(--primary-color);
+  padding: 0.25rem 0.5rem;
+}

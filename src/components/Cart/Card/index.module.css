@@ -1,0 +1,44 @@
+.cartCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  border-bottom: 1px solid #ccc;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.checkbox {
+  display: flex;
+  width: 1.5rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.pharmacyName {
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.cardContents {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  background-color: white;
+  align-items: center;
+}
+
+.productPrice {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}

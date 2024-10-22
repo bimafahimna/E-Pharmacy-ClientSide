@@ -1,0 +1,47 @@
+.product_categories {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-height: 25vh;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding: 2rem 0rem;
+}
+
+.product_categories_container {
+  padding-bottom: 1rem;
+}
+
+.product_category_card {
+  border: none;
+  background: none;
+  width: 8rem;
+  padding: 1rem;
+  background-color: var(--gray-color);
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.product_category_card p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product_category_card:hover {
+  background-color: hsl(0, 0%, 80%);
+}
+
+.product_category_card:active {
+  transform: scale(0.98);
+}
+
+.product_categories ::-webkit-scrollbar {
+  width: 18px;
+}

@@ -1,0 +1,116 @@
+.wrapper {
+  background-color: var(--quarternary-color);
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--white-color);
+  z-index: 3;
+  padding: 1.5rem;
+}
+
+.logo h2 {
+  display: inline;
+  margin-right: 0.5rem;
+}
+.logo p {
+  display: inline;
+}
+
+.link a,
+.link a:link,
+.link a:visited,
+.link a:focus,
+.link a:hover,
+.link a:active {
+  color: var(--white-color);
+  display: block;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  background-color: var(--quarternary-color);
+}
+
+.links_wrapper {
+  display: grid;
+  border-top: 1rem solid var(--gray-color);
+  border-bottom: 1rem solid var(--gray-color);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  z-index: 2;
+}
+
+.active a,
+.active a:link,
+.active a:visited,
+.active a:focus,
+.active a:hover,
+.active a:active {
+  color: var(--quarternary-color);
+}
+
+.selection_first {
+  position: absolute;
+  background-color: var(--quarternary-color);
+  height: 100%;
+  width: 100%;
+  top: calc(-100% + 1px);
+  z-index: 1;
+  border-bottom-right-radius: 0.5rem;
+  transition: transform 0.5s ease;
+}
+
+.selection_second {
+  position: absolute;
+  background-color: var(--quarternary-color);
+  height: 100%;
+  width: 100%;
+  top: -0.5px;
+  z-index: 1;
+  border-top-right-radius: 0.5rem;
+  transition: transform 0.5s ease;
+}
+
+.selection_third {
+  position: absolute;
+  background-color: var(--quarternary-color);
+  width: 100%;
+  top: 0%;
+  z-index: 1;
+  transition: transform 0.5s ease;
+}
+
+.selection_third::after {
+  display: block;
+  content: "";
+  height: 100%;
+  background-color: var(--gray-color);
+  border-radius: 0.5rem 0 0 0.5rem;
+  margin-left: 0.5rem;
+  transition: transform 0.5s ease;
+}
+
+.logout_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  color: var(--white-color);
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}

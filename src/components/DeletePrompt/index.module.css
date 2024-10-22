@@ -1,0 +1,9 @@
+.wrapper {
+  display: block;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.wrapper hr {
+  width: 100%;
+}

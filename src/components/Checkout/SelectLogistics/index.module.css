@@ -1,0 +1,62 @@
+.form_container {
+  background-color: white;
+  width: 600px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+}
+
+.form_logistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.form_title {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.radio_button {
+  cursor: pointer;
+}
+
+.logistics_info_container {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0rem;
+}
+
+.label {
+  display: flex;
+}
+
+.logistic_detail {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.logistic_info_logo {
+  width: 200px;
+  object-fit: contain;
+}
+
+.logistic_info_name {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.logistic_info_price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}

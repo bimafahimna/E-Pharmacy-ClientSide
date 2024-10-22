@@ -1,0 +1,106 @@
+.cardItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 95%;
+  height: 95%;
+}
+
+.cardItemsDisabled {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 95%;
+  height: 95%;
+}
+
+.cardDetailsDisabled {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  height: 100px;
+  opacity: 50%;
+}
+
+.productDetailsWrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.productDetails {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  width: 1.25rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.productImage {
+  max-width: 15%;
+  height: auto;
+  object-fit: cover;
+}
+
+.productTitle {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.productDesc {
+  font-size: 1rem;
+  color: var(--font-gray-color);
+  line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productPrice {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.deleteButton {
+  color: var(--danger-color);
+  position: absolute;
+  background: none;
+  border: 2px solid var(--danger-color);
+  border-radius: 50%;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteIcon {
+  color: inherit;
+  font-size: 1rem;
+}
+
+.deleteButton:hover {
+  background-color: var(--danger-color);
+  color: var(--white-color);
+}
+
+.deleteButton:hover .deleteIcon {
+  color: var(--white-color);
+}
+
+.deleteButton:active {
+  transform: scale(0.96);
+}
