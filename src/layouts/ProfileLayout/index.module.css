@@ -1,0 +1,14 @@
+.profile_section {
+  background-color: var(--tertiary-color);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.after_section {
+  display: flex;
+  gap: 2rem;
+  min-height: 90vh;
+}
