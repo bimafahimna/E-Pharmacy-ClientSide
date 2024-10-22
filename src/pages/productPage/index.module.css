@@ -1,0 +1,321 @@
+.product_details_section {
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0rem;
+}
+
+.after_section {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.details_content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--white-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.top_section {
+  display: flex;
+  gap: 1rem;
+}
+
+.top_left_section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image_wrapper {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25rem;
+}
+
+.product_image {
+  width: 100%;
+  min-height: 20rem;
+  object-fit: cover;
+}
+
+.medicine_badge {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: 2%;
+  top: 2%;
+}
+
+.product_tags {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag_form {
+  min-width: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1rem;
+  border: 2px solid var(--accent-color);
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  border-radius: 0.5rem;
+  font-size: normal;
+  font-weight: 600;
+}
+
+.tag_classification_default {
+  min-width: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1rem;
+  border: 2px solid #038648;
+  background-color: #fcf503;
+  color: #76ae25;
+  border-radius: 0.5rem;
+  font-size: normal;
+  font-weight: 600;
+}
+
+.tag_classification_ObatKeras {
+  min-width: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1rem;
+  border: 2px solid #000;
+  background-color: #ea080a;
+  color: #000;
+  border-radius: 0.5rem;
+  font-size: normal;
+  font-weight: 600;
+}
+
+.tag_classification_ObatBebas {
+  min-width: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1rem;
+  border: 2px solid #000;
+  background-color: #21980a;
+  color: #000;
+  border-radius: 0.5rem;
+  font-size: normal;
+  font-weight: 600;
+}
+
+.tag_classification_ObatBebasTerbatas {
+  min-width: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1rem;
+  border: 2px solid #030cc4;
+  background-color: hsl(0, 0%, 100%);
+  color: #030cc4;
+  border-radius: 0.5rem;
+  font-size: normal;
+  font-weight: 600;
+}
+
+.tag_category {
+  min-width: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1rem;
+  border: 2px solid #808080;
+  background-color: hsl(0, 0%, 95%);
+  color: #808080;
+  border-radius: 0.5rem;
+  font-size: normal;
+  font-weight: 600;
+}
+
+.top_right_section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.product_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.main_title {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main_subtitle {
+  font-size: 1.25rem;
+  color: var(--font-gray-color);
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_price {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.main_selling_unit {
+  font-size: 1rem;
+  color: var(--font-gray-color);
+  font-weight: 600;
+}
+
+.product_pharmacy {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 0rem;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+}
+
+.pharmacy_info {
+  display: flex;
+  font-size: 1rem;
+  justify-content: start;
+}
+
+.pharmacy_info_btn {
+  background: none;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  cursor: pointer;
+}
+
+.pharmacy_info_logo {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--info-color);
+  border-radius: 50%;
+}
+
+.add_to_cart {
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  padding: 1em;
+  font-family: inherit;
+  font-weight: 600;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  height: 3rem;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.add_to_cart:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.add_to_cart:active {
+  transform: scale(0.98);
+}
+
+.add_to_cart_disabled {
+  border: 1px solid var(--font-gray-color);
+  border-radius: 0.5rem;
+  padding: 1em;
+  font-family: inherit;
+  font-weight: 600;
+  background-color: var(--gray-color);
+  color: var(--font-gray-color);
+  cursor: not-allowed;
+  height: 3rem;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.select_other_pharmacy {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-weight: 600;
+  width: fit-content;
+  transition: color 0.1s ease, text-shadow 0.1s ease;
+}
+
+.select_other_pharmacy:hover {
+  color: var(--primary-color);
+  text-shadow: 0 0 8px #ffffff, 0 0 10px var(--white-color),
+    0 0 15px var(--primary-color);
+}
+
+.pharmacy_traffic_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_details {
+  font-size: 1rem;
+}
+
+.bot_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bot_subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.bot_contents {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.empty_section {
+  min-height: 80vh;
+}
+
+.tag_overflow {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: end;
+  letter-spacing: 3px;
+  color: var(--font-gray-color);
+}

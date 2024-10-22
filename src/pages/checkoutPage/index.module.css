@@ -1,0 +1,450 @@
+.checkoutPageSection {
+  background-color: var(--tertiary-color);
+  padding-top: 2rem;
+  display: flex;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.afterSection {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.leftSection {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.addressSection {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+}
+
+.addressSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--danger-color),
+    var(--danger-color) 40px,
+    var(--white-color) 40px,
+    var(--white-color) 60px,
+    var(--primary-color) 60px,
+    var(--primary-color) 100px,
+    var(--white-color) 100px,
+    var(--white-color) 120px
+  );
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.addressContent {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.addressOptionBtn {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 6rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addressOptionBtn:hover {
+  outline: 2px solid var(--primary-color);
+}
+
+.addressOptionAttribute {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.addressNameWrapper p {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: start;
+}
+
+.addressDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.addressDetails p {
+  font-size: large;
+  color: var(--font-gray-color);
+  text-align: start;
+  line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.addressBadge {
+  border: 1px solid var(--primary-color);
+  padding: 0rem 0.5rem;
+}
+
+.addressBadge p {
+  color: var(--primary-color);
+}
+
+.moveIconAddress {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.checkoutCardSection {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* CARD */
+.cardHeader {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 4rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.pharmacyName {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* CARD CONTENTS */
+.cardContents {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.cardDetails {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.productDetailsWrapper {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.productImage {
+  width: 15%;
+  height: auto;
+  object-fit: cover;
+}
+
+.productTitle {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.productDesc {
+  font-size: 1rem;
+  color: var(--font-gray-color);
+  line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productPrice {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.purchasedDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 200px;
+}
+
+.purchasedTitle {
+  display: flex;
+  width: 100px;
+}
+
+.highlightedText {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.checkoutLogisticPartner {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.shippingOptionBtn {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 7rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shippingOptionBtn:hover {
+  outline: 2px solid var(--primary-color);
+}
+
+.logisticPartnerAttribute {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logisticPartnerDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logisticPartnerDetails p {
+  font-size: large;
+  color: var(--font-gray-color);
+  text-align: start;
+}
+
+.logisticPartnerLogo {
+  width: 6rem;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.moveIconLogistic {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+/* NAV PROG SECTION */
+.navigationButtonsProgress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paymentBtn {
+  border: none;
+  background: none;
+  color: var(--success-color);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.paymentBtn::after {
+  content: "";
+  position: absolute;
+  left: 3%;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--success-color);
+  transition: width 0.3s ease;
+  z-index: 1;
+}
+
+.paymentBtn:hover::after {
+  width: 90%;
+}
+
+.backToHome {
+  border: none;
+  background: none;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.backToHome::after {
+  content: "";
+  position: absolute;
+  right: 3%;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+  z-index: 1;
+}
+
+.backToHome:hover::after {
+  width: 90%;
+}
+
+.rightSection {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.orderSummaryCard {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.orderSummaryHeader {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  background-color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.orderSummaryHeader p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--white-color);
+}
+
+.orderSummaryDetailsWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+.orderSummaryDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderSummaryInfo {
+  display: flex;
+  justify-content: start;
+}
+
+.orderSummaryInfo p {
+  color: var(--font-gray-color);
+}
+
+.orderSummaryValue {
+  display: flex;
+  justify-content: start;
+}
+
+.orderSummaryValue p {
+  color: var(--font-gray-color);
+}
+
+.grandTotalWrapper {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 1rem 2rem;
+}
+
+.grandTotalKekw {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.grandTotalInfo {
+  display: flex;
+  justify-content: start;
+}
+
+.grandTotalInfo p {
+  color: var(--font-gray-color);
+}
+
+.grandTotalValue {
+  display: flex;
+  justify-content: start;
+}
+
+.grandTotalValue p {
+  font-weight: bold;
+  color: #ff7b00;
+}
+
+.loading_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+}
+
+.loaderSpin {
+  width: 8rem;
+  padding: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--primary-color);
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}

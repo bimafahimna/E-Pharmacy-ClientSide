@@ -1,0 +1,22 @@
+#not_found_section {
+  background-color: var(--tertiary-color);
+  display: flex;
+}
+
+.after_section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not_found_graphic {
+  width: 40rem;
+  aspect-ratio: 1/1;
+}
+
+.page_title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
