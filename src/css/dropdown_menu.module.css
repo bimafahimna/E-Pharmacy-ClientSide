@@ -1,0 +1,97 @@
+.dropdown_menu {
+  position: absolute;
+  width: 100%;
+  z-index: 2002;
+  top: calc(100% + 0.5rem);
+  filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.1))
+    drop-shadow(-1px 2px 1px rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(1px -2px 1px rgba(0, 0, 0, 0.1))
+    drop-shadow(-1px 2px 1px rgba(0, 0, 0, 0.1));
+
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.dropdown_menu_items {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--white-color);
+  border: none;
+  font-family: inherit;
+}
+
+.dropdown_menu_items:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.dropdown_menu_header {
+  background-color: var(--white-color);
+  color: var(--font-gray-color);
+  font-weight: 600;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.dropdown_menu_header > button {
+  font-family: inherit;
+  padding: 0.5rem;
+  border: none;
+  background-color: var(--gray-color);
+  color: var(--font-gray-color);
+}
+
+.dropdown_menu_overflow {
+  max-height: 10rem;
+  overflow-y: auto;
+}
+
+.form {
+  min-width: 100%;
+}
+
+.search_icon {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 2rem;
+  z-index: 2001;
+  padding: 0.5rem;
+}
+
+button.active_dropdown {
+  background-color: white;
+  color: var(--primary-color);
+  position: relative;
+}
+
+/* width */
+.dropdown_menu::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.dropdown_menu::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
+
+/* Handle */
+.dropdown_menu::-webkit-scrollbar-thumb {
+  background: #888;
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+/* Handle on hover */
+.dropdown_menu::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}

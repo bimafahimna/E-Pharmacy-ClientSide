@@ -1,0 +1,76 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.wrapper button:hover {
+  background-color: var(--on-hover-primary-color);
+}
+
+.edit_button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1.5rem;
+  cursor: pointer;
+}
+
+.delete_button {
+  background-color: var(--danger-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.5rem;
+  min-height: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.delete_button:hover {
+  background-color: var(--on-hover-danger-color);
+}
+
+.edit_button:hover {
+  background-color: var(--on-hover-primary-color);
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  width: max-content;
+}
+
+.filter_sort_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.tab_slider {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.table_filter_wrapper {
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
